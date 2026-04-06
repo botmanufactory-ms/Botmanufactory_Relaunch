@@ -7,26 +7,15 @@
       <!-- Left: Photos + credentials -->
       <div class="ueber-left reveal">
         <div class="photo-wrap">
-          <div class="photos-stack">
-            <img
-              src="/images/founder.webp"
-              alt="Michael Segl, Gründer von Botmanufactory"
-              class="photo-main"
-              width="320"
-              height="420"
-              loading="lazy"
-              decoding="async"
-            />
-            <img
-              src="/images/founder-2.webp"
-              alt="Michael Segl im Gespräch mit einem Kunden"
-              class="photo-secondary"
-              width="200"
-              height="150"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
+          <img
+            src="/images/founder-2.webp"
+            alt="Michael Segl im Gespräch mit einem Kunden"
+            class="photo-main"
+            width="400"
+            height="300"
+            loading="lazy"
+            decoding="async"
+          />
           <div class="photo-badge">
             <span class="badge-dot" aria-hidden="true"></span>
             Gründer & Geschäftsführer
@@ -134,33 +123,14 @@
     margin-bottom: 32px;
   }
 
-  .photos-stack {
-    position: relative;
-    width: 100%;
-  }
-
   .photo-main {
     width: 100%;
     height: auto;
     border-radius: 12px;
     display: block;
     object-fit: cover;
-    object-position: center top;
-    aspect-ratio: 3/4;
-    border: 1px solid var(--color-border);
-  }
-
-  .photo-secondary {
-    position: absolute;
-    bottom: -20px;
-    right: -20px;
-    width: 55%;
-    height: auto;
-    border-radius: 10px;
-    border: 3px solid var(--color-bg-base);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-    object-fit: cover;
     aspect-ratio: 4/3;
+    border: 1px solid var(--color-border);
   }
 
   .photo-badge {
