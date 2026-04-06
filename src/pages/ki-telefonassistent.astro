@@ -1,0 +1,768 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout
+  title="KI Telefonassistent — Kein Anruf mehr verpasst | botmanufactory"
+  description="KI Telefonassistent der Anrufe annimmt, Termine bucht und Fragen beantwortet — rund um die Uhr. DSGVO-konform. Für Handwerker, Arztpraxen und KMU in Deutschland."
+  canonical="https://botmanufactory.de/ki-telefonassistent"
+>
+  <Nav />
+  <main>
+
+    <!-- Hero -->
+    <section class="leistung-hero section-padding">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
+      </div>
+      <div class="container">
+        <div class="hero-badge reveal">
+          <span class="badge-dot" aria-hidden="true"></span>
+          KI Telefonassistent
+        </div>
+        <h1 class="reveal" data-delay="0.1">
+          KI Telefonassistent —<br />
+          <span class="text-amber">Kein Anruf geht mehr verloren.</span>
+        </h1>
+        <p class="hero-sub reveal" data-delay="0.2">
+          Ihr Telefon klingelt um 19 Uhr. Kein Mitarbeiter mehr da. Normalerweise geht der Anruf verloren. Mit unserem KI Telefonassistenten nimmt er ab — natürlich, freundlich, kompetent.
+        </p>
+        <div class="hero-ctas reveal" data-delay="0.3">
+          <a href="#kontakt" class="btn-primary">Kostenlose Analyse</a>
+          <a href="#leistungen" class="btn-secondary">Wie funktioniert das?</a>
+        </div>
+        <div class="hero-trust reveal" data-delay="0.4">
+          <span class="trust-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"/><polyline points="22 4 12 14.01 9 11.01" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Natürliche Sprache
+          </span>
+          <span class="trust-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"/><polyline points="22 4 12 14.01 9 11.01" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            DSGVO-konform
+          </span>
+          <span class="trust-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"/><polyline points="22 4 12 14.01 9 11.01" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Fertig in 2–3 Wochen
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-label reveal">Das Problem</div>
+        <h2 class="reveal" data-delay="0.1">
+          Ein verpasster Anruf ist<br />
+          <span class="text-amber">ein verlorener Auftrag.</span>
+        </h2>
+        <div class="problem-grid">
+          <div class="problem-card card reveal" data-delay="0.1">
+            <div class="problem-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 8.18 8.18l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 24 18z" stroke="var(--color-error)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="1" y1="1" x2="23" y2="23" stroke="var(--color-error)" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Außerhalb der Öffnungszeiten</h3>
+            <p>Die meisten Anrufe kommen morgens früh oder abends. Genau dann, wenn niemand abnimmt — und der Anrufer beim nächsten Anbieter landet.</p>
+          </div>
+          <div class="problem-card card reveal" data-delay="0.2">
+            <div class="problem-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="var(--color-error)" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="var(--color-error)" stroke-width="1.5"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="var(--color-error)" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Überlastete Rezeption</h3>
+            <p>Gleichzeitig Patienten betreuen, Termine vergeben und Telefon abnehmen — das geht nicht. Irgendjemand wird immer warten. Meistens der Anrufer.</p>
+          </div>
+          <div class="problem-card card reveal" data-delay="0.3">
+            <div class="problem-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="var(--color-error)" stroke-width="1.5"/><path d="M12 8v4l3 3" stroke="var(--color-error)" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Urlaub, Krankheit, Feiertag</h3>
+            <p>Ihr Telefon ist stumm — aber die Kunden rufen trotzdem an. Und gehen weiter, wenn niemand abnimmt.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solution -->
+    <section class="section-padding solution-section">
+      <div class="container">
+        <div class="solution-grid">
+          <div class="solution-text">
+            <div class="section-label reveal">Die Lösung</div>
+            <h2 class="reveal" data-delay="0.1">Ein Assistent, der klingt wie ein Mensch — und handelt wie ein Profi.</h2>
+            <p class="reveal" data-delay="0.2">Kein Roboter mit monotoner Stimme. Unser KI Telefonassistent führt echte Gespräche: Er hört zu, stellt Rückfragen, bucht Termine und schickt Ihnen danach eine Zusammenfassung. Alles vollautomatisch.</p>
+            <ul class="solution-list reveal" data-delay="0.3">
+              <li>Eigene Begrüßung und Unternehmenssprache</li>
+              <li>Direkte Terminbuchung in Ihren Kalender</li>
+              <li>Anruf-Transkript per E-Mail nach jedem Gespräch</li>
+              <li>Weiterleitung an echte Mitarbeiter bei komplexen Anliegen</li>
+            </ul>
+          </div>
+          <div class="phone-visual reveal">
+            <div class="phone-mockup" aria-label="Telefonassistent Demo">
+              <div class="phone-header">
+                <div class="phone-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div>
+                  <div class="phone-title">Eingehender Anruf</div>
+                  <div class="phone-sub">+49 89 ••• ••••</div>
+                </div>
+                <div class="phone-status">Live</div>
+              </div>
+              <div class="phone-transcript">
+                <div class="transcript-item">
+                  <span class="t-speaker">Assistent</span>
+                  <span class="t-text">Guten Tag, Sie sind verbunden mit der Praxis Dr. Müller. Wie kann ich Ihnen helfen?</span>
+                </div>
+                <div class="transcript-item">
+                  <span class="t-speaker t-caller">Anrufer</span>
+                  <span class="t-text">Ich bräuchte einen Termin diese Woche, am liebsten vormittags.</span>
+                </div>
+                <div class="transcript-item">
+                  <span class="t-speaker">Assistent</span>
+                  <span class="t-text">Kein Problem. Mittwoch um 9:30 Uhr wäre frei. Passt das für Sie?</span>
+                </div>
+                <div class="transcript-item">
+                  <span class="t-speaker t-caller">Anrufer</span>
+                  <span class="t-text">Ja, perfekt.</span>
+                </div>
+                <div class="transcript-item">
+                  <span class="t-speaker">Assistent</span>
+                  <span class="t-text">Termin ist eingetragen. Sie erhalten eine SMS zur Bestätigung. Auf Wiederhören!</span>
+                </div>
+              </div>
+              <div class="phone-footer mono">
+                Transkript automatisch an hallo@praxis-mueller.de gesendet
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section-padding" id="leistungen">
+      <div class="container">
+        <div class="section-label reveal">Was Sie bekommen</div>
+        <h2 class="reveal" data-delay="0.1">Alles drin — vom ersten Klingeln bis zur Bestätigung.</h2>
+        <div class="features-grid">
+          <div class="feature-card card reveal" data-delay="0.1">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="var(--color-primary)" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>24 / 7 verfügbar</h3>
+            <p>Nachts, am Wochenende, an Feiertagen. Der Assistent nimmt immer ab.</p>
+          </div>
+          <div class="feature-card card reveal" data-delay="0.15">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 18v-6a9 9 0 0 1 18 0v6" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" stroke="var(--color-primary)" stroke-width="1.5"/></svg>
+            </div>
+            <h3>Natürliche Sprache</h3>
+            <p>Kein Roboter-Sound. Der Assistent klingt menschlich und versteht auch undeutliche oder umgangssprachliche Formulierungen.</p>
+          </div>
+          <div class="feature-card card reveal" data-delay="0.2">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" stroke="var(--color-primary)" stroke-width="1.5"/><path d="M16 2v4M8 2v4M3 10h18" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Direkte Terminbuchung</h3>
+            <p>Termin wird während des Anrufs in Ihren Kalender eingetragen. Keine Rückrufe nötig, keine manuelle Nacharbeit.</p>
+          </div>
+          <div class="feature-card card reveal" data-delay="0.25">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22,6 12,13 2,6" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Anruf-Transkript per E-Mail</h3>
+            <p>Nach jedem Gespräch erhalten Sie eine Zusammenfassung — mit Name, Anliegen und Termin. Alles dokumentiert.</p>
+          </div>
+          <div class="feature-card card reveal" data-delay="0.3">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><polyline points="17 1 21 5 17 9" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 11V9a4 4 0 0 1 4-4h14M7 23l-4-4 4-4" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 13v2a4 4 0 0 1-4 4H3" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Weiterleitung bei Bedarf</h3>
+            <p>Komplexe Anliegen oder Notfälle werden direkt an einen echten Mitarbeiter weitergeleitet — mit klarem Übergabe-Signal.</p>
+          </div>
+          <div class="feature-card card reveal" data-delay="0.35">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>DSGVO-konform</h3>
+            <p>Deutsche Server, AVV inklusive. Anrufdaten werden nicht weitergegeben oder für andere Zwecke genutzt.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prozess -->
+    <section class="section-padding prozess-section">
+      <div class="container">
+        <div class="section-label reveal">So läuft es ab</div>
+        <h2 class="reveal" data-delay="0.1">Einrichtung in 3 Schritten — ohne IT-Abteilung.</h2>
+        <div class="prozess-steps">
+          <div class="prozess-step reveal" data-delay="0.1">
+            <div class="step-number mono text-amber">01</div>
+            <div class="step-content">
+              <h3>Briefing & Konfiguration</h3>
+              <p>Wir besprechen, wie Ihr Assistent klingen soll, welche Fragen er beantworten soll und wie er Termine buchen soll. Das dauert in der Regel ein bis zwei Stunden Ihrer Zeit.</p>
+            </div>
+          </div>
+          <div class="prozess-step reveal" data-delay="0.2">
+            <div class="step-number mono text-amber">02</div>
+            <div class="step-content">
+              <h3>Einrichtung & Test</h3>
+              <p>Wir konfigurieren den Assistenten, verbinden ihn mit Ihrem Kalender und führen gemeinsam Testanrufe durch. Sie geben die Freigabe, wenn alles passt.</p>
+            </div>
+          </div>
+          <div class="prozess-step reveal" data-delay="0.3">
+            <div class="step-number mono text-amber">03</div>
+            <div class="step-content">
+              <h3>Live-Betrieb & Optimierung</h3>
+              <p>Der Assistent nimmt ab sofort Anrufe entgegen. Wir beobachten die ersten Gespräche und optimieren wo nötig. Sie haben jederzeit Zugriff auf alle Transkripte.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cross-link -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="crosslink-row reveal">
+          <div class="crosslink-card card">
+            <div class="section-label">Auch interessant</div>
+            <h3>KI Chatbot für Ihre Website</h3>
+            <p>Der Chatbot kümmert sich um schriftliche Anfragen — der Telefonassistent um Anrufe. Zusammen lassen sie keine Lücke.</p>
+            <a href="/ki-chatbot" class="btn-secondary">Mehr zum KI Chatbot →</a>
+          </div>
+          <div class="crosslink-card card">
+            <div class="section-label">Nächste Stufe</div>
+            <h3>Voice Agent</h3>
+            <p>Noch mehr Möglichkeiten: Voice Agents können auch ausgehend anrufen — für Terminbestätigungen, Follow-ups und mehr.</p>
+            <a href="/voice-agent" class="btn-secondary">Mehr zum Voice Agent →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section-padding" id="faq">
+      <div class="container">
+        <div class="section-label reveal">Häufige Fragen</div>
+        <h2 class="reveal" data-delay="0.1">Was Sie wissen wollen.</h2>
+        <div class="faq-list">
+          <details class="faq-item card reveal" data-delay="0.1">
+            <summary class="faq-question">Wie klingt der Assistent?</summary>
+            <div class="faq-answer">
+              <p>Modern, klar, natürlich — kein Roboter. Wir wählen eine Stimme, die zu Ihrem Unternehmen passt: seriös für eine Arztpraxis, freundlich-handwerklich für einen Elektriker. Auf Wunsch auch mit einer benutzerdefinierten Begrüßung in Ihrer Unternehmenssprache.</p>
+            </div>
+          </details>
+          <details class="faq-item card reveal" data-delay="0.15">
+            <summary class="faq-question">Kann er Termine direkt in meinen Kalender eintragen?</summary>
+            <div class="faq-answer">
+              <p>Ja. Integration mit Google Calendar, Microsoft Outlook und gängigen Praxissoftware-Systemen ist möglich. Der Termin erscheint automatisch — ohne dass Sie oder Ihre Mitarbeiter etwas tun müssen.</p>
+            </div>
+          </details>
+          <details class="faq-item card reveal" data-delay="0.2">
+            <summary class="faq-question">Was wenn jemand nur mit einem Menschen sprechen möchte?</summary>
+            <div class="faq-answer">
+              <p>Der Assistent erkennt das und leitet sofort weiter — entweder an Ihre Mobilnummer oder er nimmt eine Rückrufbitte entgegen. Kein Anrufer wird einfach abgewiesen.</p>
+            </div>
+          </details>
+          <details class="faq-item card reveal" data-delay="0.25">
+            <summary class="faq-question">In welchen Sprachen funktioniert das?</summary>
+            <div class="faq-answer">
+              <p>Deutsch als Standard. Englisch ist ebenfalls möglich. Weitere Sprachen (Türkisch, Russisch, Arabisch u.a.) auf Anfrage — besonders relevant für Arztpraxen mit internationalen Patienten.</p>
+            </div>
+          </details>
+          <details class="faq-item card reveal" data-delay="0.3">
+            <summary class="faq-question">Was kostet ein KI Telefonassistent?</summary>
+            <div class="faq-answer">
+              <p>Die Kosten hängen vom Gesprächsvolumen und den integrierten Funktionen ab. Wir nennen Ihnen im kostenlosen Erstgespräch eine konkrete Zahl. Richtgröße: vergleichbar mit einer halben Stelle im Empfang — ohne Urlaub, Krankheit und Fluktuation.</p>
+            </div>
+          </details>
+        </div>
+
+        <script type="application/ld+json" is:inline>
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Wie klingt der Assistent?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Modern, klar, natürlich — kein Roboter. Wir wählen eine Stimme die zu Ihrem Unternehmen passt."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Kann er Termine direkt in meinen Kalender eintragen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja. Integration mit Google Calendar, Microsoft Outlook und gängigen Praxissoftware-Systemen ist möglich."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Was wenn jemand nur mit einem Menschen sprechen möchte?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Der Assistent erkennt das und leitet sofort weiter oder nimmt eine Rückrufbitte entgegen."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "In welchen Sprachen funktioniert das?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Deutsch als Standard. Englisch ebenfalls möglich. Weitere Sprachen auf Anfrage."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Was kostet ein KI Telefonassistent?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Die Kosten hängen vom Gesprächsvolumen und den integrierten Funktionen ab. Im kostenlosen Erstgespräch nennen wir eine konkrete Zahl."
+              }
+            }
+          ]
+        }
+        </script>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-padding cta-section" id="kontakt">
+      <div class="container">
+        <div class="cta-block reveal">
+          <div class="section-label">Nächster Schritt</div>
+          <h2>Testen Sie den Assistenten — kostenlos.</h2>
+          <p>30 Minuten Erstgespräch, unverbindlich. Wir zeigen Ihnen, wie der Assistent für Ihr Unternehmen klingen würde — und was er konkret für Sie übernehmen kann.</p>
+          <div class="cta-actions">
+            <a href="mailto:hallo@botmanufactory.de" class="btn-primary">Kostenlose Demo anfragen</a>
+            <a href="/ki-automatisierung" class="btn-secondary">Auch interessant: KI Automatisierung →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .leistung-hero {
+    position: relative;
+    padding-top: 160px;
+    overflow: hidden;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .hero-glow-1 {
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255,184,0,0.1) 0%, transparent 70%);
+    animation: mesh-drift-1 12s ease-in-out infinite;
+  }
+
+  .hero-glow-2 {
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(0,212,255,0.06) 0%, transparent 70%);
+    animation: mesh-drift-2 16s ease-in-out infinite;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: 24px;
+    font-family: var(--font-heading);
+  }
+
+  .badge-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    animation: pulse-glow 2s ease-in-out infinite;
+    display: inline-block;
+  }
+
+  .hero-sub {
+    font-size: clamp(18px, 2vw, 22px);
+    color: var(--color-text-secondary);
+    max-width: 640px;
+    margin: 24px 0 40px;
+    line-height: 1.6;
+  }
+
+  .hero-ctas {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  .hero-trust {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    font-weight: 500;
+  }
+
+  .section-label {
+    font-family: var(--font-heading);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: 16px;
+  }
+
+  .problem-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+  }
+
+  .problem-card {
+    padding: 32px;
+  }
+
+  .problem-icon { margin-bottom: 20px; }
+
+  .problem-card h3 { font-size: 20px; margin-bottom: 12px; }
+
+  .problem-card p {
+    font-size: 16px;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .solution-section {
+    background: var(--color-bg-elevated);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .solution-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .solution-text h2 { margin-bottom: 24px; }
+
+  .solution-text p {
+    color: var(--color-text-secondary);
+    margin-bottom: 24px;
+  }
+
+  .solution-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .solution-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    color: var(--color-text-secondary);
+  }
+
+  .solution-list li::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    flex-shrink: 0;
+  }
+
+  /* Phone mockup */
+  .phone-mockup {
+    background: var(--color-bg-subtle);
+    border: 1px solid var(--color-border-strong);
+    border-radius: 16px;
+    overflow: hidden;
+    max-width: 440px;
+  }
+
+  .phone-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 24px;
+    background: var(--color-bg-elevated);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .phone-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255,184,0,0.1);
+    border: 1px solid rgba(255,184,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .phone-title {
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .phone-sub {
+    font-size: 12px;
+    color: var(--color-text-muted);
+    font-family: var(--font-mono);
+  }
+
+  .phone-status {
+    margin-left: auto;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--color-success);
+    background: rgba(16,198,183,0.1);
+    border: 1px solid rgba(16,198,183,0.2);
+    border-radius: 4px;
+    padding: 4px 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .phone-transcript {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .transcript-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .t-speaker {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    font-family: var(--font-heading);
+  }
+
+  .t-caller {
+    color: var(--color-text-muted);
+  }
+
+  .t-text {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+  }
+
+  .phone-footer {
+    padding: 12px 24px;
+    font-size: 11px;
+    color: var(--color-text-muted);
+    border-top: 1px solid var(--color-border);
+    text-align: center;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+  }
+
+  .feature-card { padding: 32px; }
+  .feature-icon { margin-bottom: 20px; }
+  .feature-card h3 { font-size: 18px; margin-bottom: 12px; }
+
+  .feature-card p {
+    font-size: 15px;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .prozess-section {
+    background: var(--color-bg-elevated);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .prozess-steps {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .prozess-step {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 32px;
+    padding: 40px 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .prozess-step:last-child { border-bottom: none; }
+
+  .step-number {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    padding-top: 4px;
+  }
+
+  .step-content h3 { font-size: 22px; margin-bottom: 12px; }
+
+  .step-content p {
+    color: var(--color-text-secondary);
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .crosslink-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .crosslink-card {
+    padding: 40px;
+  }
+
+  .crosslink-card h3 { font-size: 24px; margin-bottom: 12px; }
+
+  .crosslink-card p {
+    color: var(--color-text-secondary);
+    margin-bottom: 24px;
+    font-size: 16px;
+  }
+
+  .faq-list {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .faq-item { padding: 0; overflow: hidden; }
+
+  .faq-question {
+    padding: 24px 28px;
+    font-family: var(--font-heading);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    transition: color 0.2s;
+  }
+
+  .faq-question::-webkit-details-marker { display: none; }
+
+  .faq-question::after {
+    content: '+';
+    font-size: 24px;
+    color: var(--color-primary);
+    flex-shrink: 0;
+    transition: transform 0.3s;
+  }
+
+  details[open] .faq-question::after { transform: rotate(45deg); }
+  .faq-question:hover { color: var(--color-primary); }
+
+  .faq-answer {
+    padding: 0 28px 24px;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .faq-answer p {
+    margin: 16px 0 0;
+    color: var(--color-text-secondary);
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .cta-section {
+    background: var(--color-bg-elevated);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .cta-block {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .cta-block h2 { margin-bottom: 16px; }
+  .cta-block p { color: var(--color-text-secondary); margin-bottom: 40px; }
+
+  .cta-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 1024px) {
+    .solution-grid { grid-template-columns: 1fr; gap: 48px; }
+    .crosslink-row { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 768px) {
+    .leistung-hero { padding-top: 120px; }
+    .problem-grid { grid-template-columns: 1fr; }
+    .features-grid { grid-template-columns: 1fr; }
+    .prozess-step { grid-template-columns: 60px 1fr; gap: 16px; }
+  }
+</style>

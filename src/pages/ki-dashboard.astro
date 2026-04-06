@@ -1,0 +1,743 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout
+  title="KI Dashboard für Geschäftsführer — alle Prozesse an einem Ort | botmanufactory"
+  description="Das KI Dashboard von botmanufactory bringt alle Ihre automatisierten Prozesse, Daten und KI-Tools in ein einziges Interface. Eigenprodukt. Jetzt Demo anfragen."
+  canonical="https://botmanufactory.de/ki-dashboard"
+>
+  <Nav />
+  <main>
+
+    <!-- Hero -->
+    <section class="leistung-hero section-padding">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
+      </div>
+      <div class="container">
+        <div class="hero-badge reveal">
+          <span class="badge-dot" aria-hidden="true"></span>
+          KI Dashboard · Eigenprodukt
+        </div>
+        <h1 class="reveal" data-delay="0.1">
+          KI Dashboard —<br />
+          <span class="text-amber">Ihr Unternehmen auf einen Blick.</span>
+        </h1>
+        <p class="hero-sub reveal" data-delay="0.2">
+          Kein zugekauftes Tool, das Sie halb nutzen. Das KI Dashboard ist ein Eigenprodukt von Botmanufactory — entwickelt für Geschäftsführer, die ihre KI-Prozesse, Automatisierungen und Daten an einem Ort sehen wollen.
+        </p>
+        <div class="hero-ctas reveal" data-delay="0.3">
+          <a href="#kontakt" class="btn-primary">Demo anfragen</a>
+          <a href="#features" class="btn-secondary">Was kann das Dashboard?</a>
+        </div>
+        <div class="hero-trust reveal" data-delay="0.4">
+          <span class="trust-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"/><polyline points="22 4 12 14.01 9 11.01" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Eigenprodukt von Botmanufactory
+          </span>
+          <span class="trust-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"/><polyline points="22 4 12 14.01 9 11.01" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            White-Label möglich
+          </span>
+          <span class="trust-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"/><polyline points="22 4 12 14.01 9 11.01" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            DSGVO-konform
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-label reveal">Das Problem</div>
+        <h2 class="reveal" data-delay="0.1">
+          Ihre KI läuft — aber Sie sehen nicht,<br />
+          <span class="text-amber">was sie gerade tut.</span>
+        </h2>
+        <div class="problem-grid">
+          <div class="problem-card card reveal" data-delay="0.1">
+            <div class="problem-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" stroke="var(--color-error)" stroke-width="1.5" stroke-linecap="round"/><rect x="14" y="3" width="7" height="7" stroke="var(--color-error)" stroke-width="1.5" stroke-linecap="round"/><rect x="3" y="14" width="7" height="7" stroke="var(--color-error)" stroke-width="1.5" stroke-linecap="round"/><rect x="14" y="14" width="7" height="7" stroke="var(--color-error)" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Daten in 5 verschiedenen Tools</h3>
+            <p>Chatbot-Statistiken hier, Anruf-Transkripte dort, Automatisierungs-Log woanders. Der Überblick fehlt — und damit die Kontrolle.</p>
+          </div>
+          <div class="problem-card card reveal" data-delay="0.2">
+            <div class="problem-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="var(--color-error)" stroke-width="1.5"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" stroke="var(--color-error)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke="var(--color-error)" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Kein Überblick für Mitarbeiter</h3>
+            <p>Ihr Team weiß nicht, was der Chatbot gerade beantwortet, welche Anrufe eingegangen sind, oder ob eine Automatisierung gerade fehlschlägt.</p>
+          </div>
+          <div class="problem-card card reveal" data-delay="0.3">
+            <div class="problem-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" stroke="var(--color-error)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Keine Zahlen für Entscheidungen</h3>
+            <p>Wie viele Leads hat der Chatbot diese Woche generiert? Wie viele Anrufe wurden automatisch bearbeitet? Ohne Dashboard keine Antworten.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dashboard Visual -->
+    <section class="section-padding dashboard-section">
+      <div class="container">
+        <div class="section-label reveal">Das Produkt</div>
+        <h2 class="reveal" data-delay="0.1">Ein Interface für alle Ihre KI-Prozesse.</h2>
+        <div class="dashboard-mockup reveal" data-delay="0.2" aria-label="KI Dashboard Vorschau">
+          <div class="dash-sidebar">
+            <div class="dash-logo">
+              <span class="dash-logo-b">B</span>
+              <span>botmanufactory</span>
+            </div>
+            <nav class="dash-nav" aria-label="Dashboard-Navigation">
+              <div class="dash-nav-item active">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="7" height="7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><rect x="14" y="3" width="7" height="7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><rect x="3" y="14" width="7" height="7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><rect x="14" y="14" width="7" height="7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Übersicht
+              </div>
+              <div class="dash-nav-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Chatbot
+              </div>
+              <div class="dash-nav-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Anrufe
+              </div>
+              <div class="dash-nav-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><polyline points="17 1 21 5 17 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 11V9a4 4 0 0 1 4-4h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 23l-4-4 4-4M21 13v2a4 4 0 0 1-4 4H3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Automatisierungen
+              </div>
+            </nav>
+          </div>
+          <div class="dash-main">
+            <div class="dash-header">
+              <div class="dash-title">Übersicht</div>
+              <div class="dash-period mono">April 2025</div>
+            </div>
+            <div class="dash-stats">
+              <div class="dash-stat">
+                <div class="ds-label">Chatbot-Gespräche</div>
+                <div class="ds-value mono text-amber">247</div>
+                <div class="ds-change">+18% vs. Vormonat</div>
+              </div>
+              <div class="dash-stat">
+                <div class="ds-label">Anrufe bearbeitet</div>
+                <div class="ds-value mono text-amber">89</div>
+                <div class="ds-change">+32% vs. Vormonat</div>
+              </div>
+              <div class="dash-stat">
+                <div class="ds-label">Automatisierungen</div>
+                <div class="ds-value mono text-amber">1.204</div>
+                <div class="ds-change">Läuft stabil</div>
+              </div>
+              <div class="dash-stat">
+                <div class="ds-label">Zeit gespart</div>
+                <div class="ds-value mono text-cyan">~28 Std.</div>
+                <div class="ds-change">Diese Woche</div>
+              </div>
+            </div>
+            <div class="dash-log">
+              <div class="log-title">Letzte Aktivitäten</div>
+              <div class="log-item">
+                <span class="log-dot log-green" aria-hidden="true"></span>
+                <span class="log-text">Chatbot: Terminbuchung von Max Huber — 14:30 Uhr</span>
+                <span class="log-time mono">Heute 16:22</span>
+              </div>
+              <div class="log-item">
+                <span class="log-dot log-amber" aria-hidden="true"></span>
+                <span class="log-text">Anruf: Rückrufbitte von +49 89 ••• — weitergeleitet</span>
+                <span class="log-time mono">Heute 15:47</span>
+              </div>
+              <div class="log-item">
+                <span class="log-dot log-green" aria-hidden="true"></span>
+                <span class="log-text">Automatisierung: Angebot #0089 versandt an Müller GmbH</span>
+                <span class="log-time mono">Heute 14:11</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section-padding" id="features">
+      <div class="container">
+        <div class="section-label reveal">Funktionen</div>
+        <h2 class="reveal" data-delay="0.1">Was das Dashboard für Sie leistet.</h2>
+        <div class="features-grid">
+          <div class="feature-card card reveal" data-delay="0.1">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Echtzeit-Übersicht</h3>
+            <p>Alle KI-Prozesse auf einen Blick — aktuell, nicht gestern. Chatbot-Gespräche, Anruf-Log, Automatisierungs-Status.</p>
+          </div>
+          <div class="feature-card card reveal" data-delay="0.15">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Chatbot-Statistiken</h3>
+            <p>Wie viele Gespräche? Welche Fragen am häufigsten? Wo bricht der Nutzer ab? Alles messbar, alles optimierbar.</p>
+          </div>
+          <div class="feature-card card reveal" data-delay="0.2">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Anruf-Analysen</h3>
+            <p>Alle Transkripte, Zusammenfassungen und Ergebnisse aus dem KI Telefonassistenten und Voice Agent — durchsuchbar, filterbar.</p>
+          </div>
+          <div class="feature-card card reveal" data-delay="0.25">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><polyline points="17 1 21 5 17 9" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 11V9a4 4 0 0 1 4-4h14" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 23l-4-4 4-4M21 13v2a4 4 0 0 1-4 4H3" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Automatisierungs-Log</h3>
+            <p>Welche Workflows liefen heute? Gab es Fehler? Was wurde ausgelöst? Vollständige Transparenz über alle automatisierten Prozesse.</p>
+          </div>
+          <div class="feature-card card reveal" data-delay="0.3">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="var(--color-primary)" stroke-width="1.5"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Nutzer-Management</h3>
+            <p>Mitarbeiter bekommen nur Zugriff auf das, was sie brauchen. Rollen und Rechte flexibel konfigurierbar.</p>
+          </div>
+          <div class="feature-card card reveal" data-delay="0.35">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>White-Label möglich</h3>
+            <p>Das Dashboard erscheint unter Ihrem Firmennamen und Logo — ideal für Unternehmen, die es intern einführen oder an eigene Kunden weitergeben wollen.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Positioning -->
+    <section class="section-padding positioning-section">
+      <div class="container">
+        <div class="positioning-block reveal">
+          <div class="pb-text">
+            <div class="section-label">Warum ein Eigenprodukt?</div>
+            <h2>Nicht zusammengebaut — sondern entwickelt.</h2>
+            <p>Die meisten Agenturen schmeißen mehrere Drittanbieter zusammen und nennen es "Dashboard". Das KI Dashboard von Botmanufactory ist ein eigenentwickeltes Produkt — gebaut für die Bedürfnisse von KMU in Deutschland. Es wächst mit jedem Kunden weiter.</p>
+            <p>Das bedeutet: Keine willkürlichen Preiserhöhungen durch externe Anbieter. Kein Datenverlust wenn ein Drittanbieter seinen Service einstellt. Volle Kontrolle.</p>
+          </div>
+          <div class="pb-stats">
+            <div class="pb-stat">
+              <div class="pbs-num mono text-amber">1</div>
+              <div class="pbs-label">Interface für alle Ihre KI-Prozesse</div>
+            </div>
+            <div class="pb-stat">
+              <div class="pbs-num mono text-amber">0</div>
+              <div class="pbs-label">Externe Abhängigkeiten</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section-padding" id="faq">
+      <div class="container">
+        <div class="section-label reveal">Häufige Fragen</div>
+        <h2 class="reveal" data-delay="0.1">Ihre Fragen zum KI Dashboard.</h2>
+        <div class="faq-list">
+          <details class="faq-item card reveal" data-delay="0.1">
+            <summary class="faq-question">Ist das ein fertiges Produkt?</summary>
+            <div class="faq-answer">
+              <p>Ja — mit einem wichtigen Unterschied zu Standard-Software: Das Dashboard wird für jeden Kunden auf seine spezifischen Prozesse und KI-Dienste konfiguriert. Sie sehen nur das, was für Ihr Unternehmen relevant ist — nicht ein generisches Interface das für 10.000 verschiedene Nutzer gebaut wurde.</p>
+            </div>
+          </details>
+          <details class="faq-item card reveal" data-delay="0.15">
+            <summary class="faq-question">Kann ich eigene Daten einbinden?</summary>
+            <div class="faq-answer">
+              <p>Ja. Das Dashboard kann an Ihre bestehenden Systeme angebunden werden: CRM, ERP, Buchhaltungssoftware, Google Analytics und mehr. Was angebunden werden kann, klären wir im Erstgespräch.</p>
+            </div>
+          </details>
+          <details class="faq-item card reveal" data-delay="0.2">
+            <summary class="faq-question">Brauche ich technisches Know-how?</summary>
+            <div class="faq-answer">
+              <p>Nein. Das Dashboard ist für Geschäftsführer und Mitarbeiter ohne technischen Hintergrund entwickelt. Wir schulen Ihr Team ein — und sind dauerhaft Ansprechpartner, wenn Fragen auftauchen.</p>
+            </div>
+          </details>
+          <details class="faq-item card reveal" data-delay="0.25">
+            <summary class="faq-question">Was kostet das Dashboard?</summary>
+            <div class="faq-answer">
+              <p>Das Dashboard ist Teil des Botmanufactory-Ökosystems — es wird automatisch eingerichtet, wenn Sie KI-Dienste wie Chatbot, Telefonassistent oder Automatisierungen bei uns buchen. Für bestehende Kunden ist die Grundfunktion inklusive. Erweiterte Features und White-Labeling werden separat berechnet. Im Erstgespräch nennen wir Ihnen konkrete Zahlen.</p>
+            </div>
+          </details>
+        </div>
+
+        <script type="application/ld+json" is:inline>
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Ist das ein fertiges Produkt?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, wird aber für jeden Kunden auf seine spezifischen Prozesse und KI-Dienste konfiguriert."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Kann ich eigene Daten einbinden?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja. Das Dashboard kann an CRM, ERP, Buchhaltungssoftware, Google Analytics und mehr angebunden werden."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Brauche ich technisches Know-how?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nein. Das Dashboard ist für Geschäftsführer und Mitarbeiter ohne technischen Hintergrund entwickelt."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Was kostet das Dashboard?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Das Dashboard ist Teil des Botmanufactory-Ökosystems. Die Grundfunktion ist für Kunden mit KI-Diensten inklusive."
+              }
+            }
+          ]
+        }
+        </script>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-padding cta-section" id="kontakt">
+      <div class="container">
+        <div class="cta-block reveal">
+          <div class="section-label">Nächster Schritt</div>
+          <h2>Das Dashboard live erleben — in 30 Minuten.</h2>
+          <p>Wir zeigen Ihnen das Dashboard mit Beispieldaten aus Ihrer Branche. Kostenlos, unverbindlich, ohne Fachchinesisch.</p>
+          <div class="cta-actions">
+            <a href="mailto:hallo@botmanufactory.de" class="btn-primary">Demo anfragen</a>
+            <a href="/ki-automatisierung" class="btn-secondary">Auch interessant: KI Automatisierung →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .leistung-hero {
+    position: relative;
+    padding-top: 160px;
+    overflow: hidden;
+  }
+
+  .hero-bg { position: absolute; inset: 0; pointer-events: none; }
+
+  .hero-glow-1 {
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255,184,0,0.1) 0%, transparent 70%);
+    animation: mesh-drift-1 12s ease-in-out infinite;
+  }
+
+  .hero-glow-2 {
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(0,212,255,0.06) 0%, transparent 70%);
+    animation: mesh-drift-2 16s ease-in-out infinite;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: 24px;
+    font-family: var(--font-heading);
+  }
+
+  .badge-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    animation: pulse-glow 2s ease-in-out infinite;
+    display: inline-block;
+  }
+
+  .hero-sub {
+    font-size: clamp(18px, 2vw, 22px);
+    color: var(--color-text-secondary);
+    max-width: 640px;
+    margin: 24px 0 40px;
+    line-height: 1.6;
+  }
+
+  .hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 40px; }
+  .hero-trust { display: flex; gap: 24px; flex-wrap: wrap; }
+
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    font-weight: 500;
+  }
+
+  .section-label {
+    font-family: var(--font-heading);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: 16px;
+  }
+
+  .problem-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+  }
+
+  .problem-card { padding: 32px; }
+  .problem-icon { margin-bottom: 20px; }
+  .problem-card h3 { font-size: 20px; margin-bottom: 12px; }
+  .problem-card p { font-size: 16px; color: var(--color-text-secondary); line-height: 1.7; margin: 0; }
+
+  /* Dashboard Mockup */
+  .dashboard-section {
+    background: var(--color-bg-elevated);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .dashboard-mockup {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    background: var(--color-bg-subtle);
+    border: 1px solid var(--color-border-strong);
+    border-radius: 16px;
+    overflow: hidden;
+    margin-top: 48px;
+  }
+
+  .dash-sidebar {
+    background: var(--color-bg-base);
+    border-right: 1px solid var(--color-border);
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .dash-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 14px;
+    padding: 0 8px;
+  }
+
+  .dash-logo-b {
+    width: 28px;
+    height: 28px;
+    background: var(--color-primary);
+    color: #08090E;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 800;
+    flex-shrink: 0;
+  }
+
+  .dash-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .dash-nav-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    cursor: default;
+  }
+
+  .dash-nav-item.active {
+    background: rgba(255,184,0,0.1);
+    color: var(--color-primary);
+  }
+
+  .dash-main {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .dash-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dash-title {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .dash-period {
+    font-size: 13px;
+    color: var(--color-text-muted);
+  }
+
+  .dash-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+
+  .dash-stat {
+    background: var(--color-bg-elevated);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .ds-label {
+    font-size: 12px;
+    color: var(--color-text-muted);
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+
+  .ds-value {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .ds-change {
+    font-size: 11px;
+    color: var(--color-success);
+  }
+
+  .dash-log {
+    background: var(--color-bg-elevated);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .log-title {
+    font-family: var(--font-heading);
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 16px;
+  }
+
+  .log-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .log-item:last-child { border-bottom: none; }
+
+  .log-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .log-green { background: var(--color-success); }
+  .log-amber { background: var(--color-primary); }
+
+  .log-text {
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    flex: 1;
+  }
+
+  .log-time {
+    font-size: 11px;
+    color: var(--color-text-muted);
+    flex-shrink: 0;
+  }
+
+  /* Features */
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+  }
+
+  .feature-card { padding: 32px; }
+  .feature-icon { margin-bottom: 20px; }
+  .feature-card h3 { font-size: 18px; margin-bottom: 12px; }
+
+  .feature-card p {
+    font-size: 15px;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  /* Positioning */
+  .positioning-section {
+    background: var(--color-bg-elevated);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .positioning-block {
+    display: grid;
+    grid-template-columns: 1fr 240px;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .pb-text h2 { margin-bottom: 16px; }
+  .pb-text p { color: var(--color-text-secondary); margin-bottom: 16px; }
+  .pb-text p:last-child { margin-bottom: 0; }
+
+  .pb-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .pbs-num {
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .pbs-label {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    line-height: 1.4;
+  }
+
+  .faq-list {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .faq-item { padding: 0; overflow: hidden; }
+
+  .faq-question {
+    padding: 24px 28px;
+    font-family: var(--font-heading);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    transition: color 0.2s;
+  }
+
+  .faq-question::-webkit-details-marker { display: none; }
+
+  .faq-question::after {
+    content: '+';
+    font-size: 24px;
+    color: var(--color-primary);
+    flex-shrink: 0;
+    transition: transform 0.3s;
+  }
+
+  details[open] .faq-question::after { transform: rotate(45deg); }
+  .faq-question:hover { color: var(--color-primary); }
+
+  .faq-answer {
+    padding: 0 28px 24px;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .faq-answer p {
+    margin: 16px 0 0;
+    color: var(--color-text-secondary);
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .cta-section {
+    background: var(--color-bg-elevated);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .cta-block { text-align: center; max-width: 640px; margin: 0 auto; }
+  .cta-block h2 { margin-bottom: 16px; }
+  .cta-block p { color: var(--color-text-secondary); margin-bottom: 40px; }
+
+  .cta-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 1024px) {
+    .dashboard-mockup { grid-template-columns: 1fr; }
+    .dash-sidebar { display: none; }
+    .positioning-block { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 768px) {
+    .leistung-hero { padding-top: 120px; }
+    .problem-grid { grid-template-columns: 1fr; }
+    .features-grid { grid-template-columns: 1fr; }
+    .dash-stats { grid-template-columns: 1fr 1fr; }
+  }
+</style>
