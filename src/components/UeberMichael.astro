@@ -4,15 +4,28 @@
 <section id="ueber-uns" class="section-padding" aria-labelledby="ueber-heading">
   <div class="container">
     <div class="ueber-grid">
-      <!-- Left: Photo placeholder + credentials -->
+      <!-- Left: Photos + credentials -->
       <div class="ueber-left reveal">
-        <div class="photo-wrap" aria-label="Michael Segl, Gründer">
-          <div class="photo-placeholder">
-            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="var(--color-border-strong)" stroke-width="1.5" stroke-linecap="round"/>
-              <circle cx="12" cy="7" r="4" stroke="var(--color-border-strong)" stroke-width="1.5"/>
-            </svg>
-            <span class="photo-hint">Foto folgt</span>
+        <div class="photo-wrap">
+          <div class="photos-stack">
+            <img
+              src="/images/founder.webp"
+              alt="Michael Segl, Gründer von Botmanufactory"
+              class="photo-main"
+              width="320"
+              height="420"
+              loading="lazy"
+              decoding="async"
+            />
+            <img
+              src="/images/founder-2.webp"
+              alt="Michael Segl im Gespräch mit einem Kunden"
+              class="photo-secondary"
+              width="200"
+              height="150"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div class="photo-badge">
             <span class="badge-dot" aria-hidden="true"></span>
@@ -113,7 +126,7 @@
     align-items: start;
   }
 
-  /* Photo */
+  /* Photos */
   .photo-wrap {
     display: flex;
     flex-direction: column;
@@ -121,24 +134,33 @@
     margin-bottom: 32px;
   }
 
-  .photo-placeholder {
+  .photos-stack {
+    position: relative;
     width: 100%;
-    aspect-ratio: 3/4;
-    background: var(--color-bg-elevated);
-    border: 1px solid var(--color-border);
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    color: var(--color-text-muted);
-    font-size: 13px;
   }
 
-  .photo-hint {
-    font-size: 12px;
-    color: var(--color-text-muted);
+  .photo-main {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    object-fit: cover;
+    object-position: center top;
+    aspect-ratio: 3/4;
+    border: 1px solid var(--color-border);
+  }
+
+  .photo-secondary {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 55%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid var(--color-bg-base);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+    aspect-ratio: 4/3;
   }
 
   .photo-badge {
@@ -262,12 +284,9 @@
       align-items: flex-start;
     }
     .photo-wrap {
-      min-width: 180px;
-      max-width: 180px;
+      min-width: 220px;
+      max-width: 220px;
       margin-bottom: 0;
-    }
-    .photo-placeholder {
-      aspect-ratio: 1;
     }
   }
 
