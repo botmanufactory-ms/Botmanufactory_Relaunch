@@ -1,0 +1,359 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="KI für Reinigungsfirmen | Automatische Angebote & Chatbot | botmanufactory"
+  description="KI Chatbot, automatische Angebotserstellung und Online-Sichtbarkeit für Reinigungsunternehmen. Mehr Aufträge, weniger manuelle Arbeit. Für Gebäude-, Büro- und Unterhaltsreinigung."
+  canonical="https://botmanufactory.de/branchen/reinigung"
+>
+  <Nav />
+  <main>
+
+    <!-- Hero -->
+    <section class="leistung-hero section-padding">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
+      </div>
+      <div class="container">
+        <div class="hero-badge reveal">
+          <span class="badge-dot" aria-hidden="true"></span>
+          Digitalisierung Reinigung
+        </div>
+        <h1 class="reveal" data-delay="0.1">
+          Mehr Aufträge.<br />
+          <span class="text-amber">Weniger Papierkram.</span>
+        </h1>
+        <p class="hero-sub reveal" data-delay="0.2">
+          Anfragen beantworten, Angebote kalkulieren, Kunden betreuen — KI übernimmt die Büroarbeit, damit Sie und Ihr Team sich um die eigentliche Arbeit kümmern können.
+        </p>
+        <div class="hero-ctas reveal" data-delay="0.3">
+          <a href="#kontakt" class="btn-primary">Kostenlose Analyse</a>
+          <a href="#loesungen" class="btn-secondary">Unsere Lösungen</a>
+        </div>
+        <div class="hero-trust reveal" data-delay="0.4">
+          <span class="trust-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"/><polyline points="22 4 12 14.01 9 11.01" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Gebäudereinigung
+          </span>
+          <span class="trust-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"/><polyline points="22 4 12 14.01 9 11.01" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Büroreinigung
+          </span>
+          <span class="trust-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"/><polyline points="22 4 12 14.01 9 11.01" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Unterhaltsreinigung
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem -->
+    <section class="section-padding" id="problem">
+      <div class="container">
+        <div class="section-label reveal">Das Problem</div>
+        <h2 class="reveal" data-delay="0.1">
+          Büroarbeit statt Auftragsarbeit —<br />
+          <span class="text-amber">das kostet Umsatz.</span>
+        </h2>
+        <div class="problem-grid">
+          <div class="problem-card card reveal" data-delay="0.1">
+            <div class="problem-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke="var(--color-error)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Anfragen kommen, aber die Reaktionszeit ist zu lang.</h3>
+            <p>Potenzielle Kunden wollen schnelle Antworten. Wer zu lange wartet, verliert den Auftrag an die Konkurrenz.</p>
+          </div>
+          <div class="problem-card card reveal" data-delay="0.2">
+            <div class="problem-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="var(--color-error)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><polyline points="14 2 14 8 20 8" stroke="var(--color-error)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="16" y1="13" x2="8" y2="13" stroke="var(--color-error)" stroke-width="1.5" stroke-linecap="round"/><line x1="16" y1="17" x2="8" y2="17" stroke="var(--color-error)" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Angebote zu kalkulieren kostet zu viel Zeit.</h3>
+            <p>Jede Anfrage braucht eine Kalkulation. Stunden pro Angebot — für etwas, das KI in Minuten erledigen kann.</p>
+          </div>
+          <div class="problem-card card reveal" data-delay="0.3">
+            <div class="problem-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="8" stroke="var(--color-error)" stroke-width="1.5"/><path d="M21 21l-4.35-4.35" stroke="var(--color-error)" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Neue Kunden finden Sie kaum online.</h3>
+            <p>Ohne SEO und moderne Website sind Sie für Unternehmen, die online nach Reinigungsservices suchen, unsichtbar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solution -->
+    <section class="section-padding solution-section" id="loesungen">
+      <div class="container">
+        <div class="section-label reveal">Die Lösung</div>
+        <h2 class="reveal" data-delay="0.1">
+          Digitale Prozesse für Reinigungsunternehmen.
+        </h2>
+        <p class="section-sub reveal" data-delay="0.2">
+          Mehr Aufträge gewinnen. Schneller anbieten. Effizienter arbeiten.
+        </p>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section-padding" id="leistungen">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature-card card reveal" data-delay="0.1">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>KI Chatbot</h3>
+            <p>Beantwortet Anfragen auf Ihrer Website sofort. Qualifiziert Interessenten, leitet Kontaktaufnahme ein.</p>
+          </div>
+          <div class="feature-card card reveal" data-delay="0.15">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><polyline points="14 2 14 8 20 8" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Automatische Angebotserstellung</h3>
+            <p>Aus einer Anfrage wird in Minuten ein fertiges Angebot. Mit Ihrer Kalkulation, Ihrem Layout.</p>
+          </div>
+          <div class="feature-card card reveal" data-delay="0.2">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>KI Telefonassistent</h3>
+            <p>Nimmt Anrufe an, wenn Sie oder Ihr Büro nicht verfügbar sind.</p>
+          </div>
+          <div class="feature-card card reveal" data-delay="0.25">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="8" stroke="var(--color-primary)" stroke-width="1.5"/><path d="M21 21l-4.35-4.35" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Online-Sichtbarkeit</h3>
+            <p>SEO plus moderne Website = sichtbar für "Reinigungsfirma München" und lokale Suchen.</p>
+          </div>
+          <div class="feature-card card reveal" data-delay="0.3">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M22 2 11 13" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 2 15 22 11 13 2 9l20-7z" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Kundenkommunikation</h3>
+            <p>Automatische Auftragsbestätigungen, Erinnerungen und Rechnungsversand.</p>
+          </div>
+          <div class="feature-card card reveal" data-delay="0.35">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="var(--color-primary)" stroke-width="1.5"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Mitarbeitergewinnung</h3>
+            <p>Stellenanzeigen für Reinigungskräfte auf den richtigen Plattformen.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prozess -->
+    <section class="section-padding prozess-section">
+      <div class="container">
+        <div class="section-label reveal">So läuft es ab</div>
+        <h2 class="reveal" data-delay="0.1">Von der Analyse zu mehr Aufträgen — in 4 Schritten.</h2>
+        <div class="prozess-steps">
+          <div class="prozess-step reveal" data-delay="0.1">
+            <div class="step-number mono text-amber">01</div>
+            <div class="step-content">
+              <h3 class="step-title">Analyse</h3>
+              <p class="step-desc">30 Minuten, kostenlos. Wir schauen uns Ihren Betrieb an — wo verlieren Sie Anfragen, wo entsteht der meiste Aufwand?</p>
+            </div>
+          </div>
+          <div class="prozess-step reveal" data-delay="0.2">
+            <div class="step-number mono text-amber">02</div>
+            <div class="step-content">
+              <h3 class="step-title">KI-Angebotssystem</h3>
+              <p class="step-desc">Ihre Kalkulation wird einmalig hinterlegt. Ab dann erstellt KI für jede Anfrage in Minuten ein fertiges Angebot.</p>
+            </div>
+          </div>
+          <div class="prozess-step reveal" data-delay="0.3">
+            <div class="step-number mono text-amber">03</div>
+            <div class="step-content">
+              <h3 class="step-title">Website &amp; SEO</h3>
+              <p class="step-desc">Moderne Website mit Chatbot — sichtbar bei Google für lokale Reinigungsanfragen.</p>
+            </div>
+          </div>
+          <div class="prozess-step reveal" data-delay="0.4">
+            <div class="step-number mono text-amber">04</div>
+            <div class="step-content">
+              <h3 class="step-title">Schulung &amp; Go-Live</h3>
+              <p class="step-desc">Ihr Team lernt die Tools in einer Stunde kennen. Das System ist live — wir bleiben als Ansprechpartner.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section-padding" id="faq">
+      <div class="container">
+        <div class="section-label reveal">Häufige Fragen</div>
+        <h2 class="reveal" data-delay="0.1">Was Reinigungsunternehmen uns am häufigsten fragen.</h2>
+        <div class="faq-list">
+          <details class="faq-item card reveal" data-delay="0.1">
+            <summary class="faq-question">Für welche Reinigungsunternehmen ist das geeignet?</summary>
+            <div class="faq-answer">
+              <p>Gebäudereinigung, Büroreinigung, Unterhaltsreinigung, Haushaltsreinigung, Fensterreinigung, Sonderreinigung. Wenn bei Ihnen Anfragen eingehen und Angebote geschrieben werden, können wir helfen.</p>
+            </div>
+          </details>
+          <details class="faq-item card reveal" data-delay="0.15">
+            <summary class="faq-question">Wie funktioniert die automatische Angebotserstellung?</summary>
+            <div class="faq-answer">
+              <p>Sie definieren Ihre Kalkulation einmalig — Stundensätze, Flächen, Leistungspakete. KI erstellt daraus für jede Anfrage ein individuelles Angebot in Ihrem Design und Ihrer Sprache.</p>
+            </div>
+          </details>
+          <details class="faq-item card reveal" data-delay="0.2">
+            <summary class="faq-question">Was kostet der Einstieg?</summary>
+            <div class="faq-answer">
+              <p>Der KI Chatbot startet ab 99 Euro pro Monat. Im Erstgespräch zeigen wir die sinnvollste Kombination für Ihr Unternehmen — und was sich wirklich rechnet.</p>
+            </div>
+          </details>
+          <details class="faq-item card reveal" data-delay="0.25">
+            <summary class="faq-question">Kommen Sie auch vor Ort?</summary>
+            <div class="faq-answer">
+              <p>In Bayern gerne persönlich. Bundesweit auch remote — per Video-Call und Bildschirmfreigabe. Kein Unterschied in der Qualität.</p>
+            </div>
+          </details>
+          <details class="faq-item card reveal" data-delay="0.3">
+            <summary class="faq-question">Wie lange dauert die Umsetzung?</summary>
+            <div class="faq-answer">
+              <p>KI Chatbot: 2 bis 4 Wochen. Automatische Angebotserstellung: 4 bis 8 Wochen — je nach Komplexität Ihrer Kalkulation und Leistungspakete. Im Erstgespräch geben wir eine konkrete Schätzung.</p>
+            </div>
+          </details>
+        </div>
+
+        <script type="application/ld+json" is:inline>
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Für welche Reinigungsunternehmen ist das geeignet?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Gebäudereinigung, Büroreinigung, Unterhaltsreinigung, Haushaltsreinigung, Fensterreinigung, Sonderreinigung."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Wie funktioniert die automatische Angebotserstellung?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sie definieren Ihre Kalkulation einmalig. KI erstellt daraus für jede Anfrage ein individuelles Angebot."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Was kostet der Einstieg?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Der KI Chatbot startet ab 99 Euro pro Monat. Im Erstgespräch zeigen wir die sinnvollste Kombination."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Kommen Sie auch vor Ort?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In Bayern gerne persönlich. Bundesweit auch remote."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Wie lange dauert die Umsetzung?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "KI Chatbot: 2 bis 4 Wochen. Automatische Angebotserstellung: 4 bis 8 Wochen je nach Komplexität."
+              }
+            }
+          ]
+        }
+        </script>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-padding cta-strip" id="kontakt">
+      <div class="container">
+        <div class="cta-inner">
+          <div class="cta-text">
+            <h2 class="cta-heading reveal">Ihr Reinigungsunternehmen verdient mehr Aufträge.</h2>
+            <p class="cta-sub reveal" data-delay="0.1">30 Minuten Analyse — kostenlos, unverbindlich.</p>
+            <a href="mailto:hallo@botmanufactory.de" class="btn-primary reveal" data-delay="0.2">
+              hallo@botmanufactory.de
+            </a>
+            <div class="cta-links reveal" data-delay="0.3">
+              <a href="/ki-chatbot" class="cta-link">KI Chatbot →</a>
+              <a href="/ki-automatisierung" class="cta-link">Prozessautomatisierung →</a>
+              <a href="/website-relaunch" class="cta-link">Website-Relaunch →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .leistung-hero { position: relative; padding-top: 160px; overflow: hidden; }
+  .hero-bg { position: absolute; inset: 0; pointer-events: none; }
+  .hero-glow-1 { position: absolute; top: -80px; right: -60px; width: 500px; height: 400px; background: radial-gradient(ellipse, rgba(255,184,0,0.1) 0%, transparent 70%); filter: blur(50px); }
+  .hero-glow-2 { position: absolute; bottom: 0; left: -80px; width: 400px; height: 300px; background: radial-gradient(ellipse, rgba(0,212,255,0.06) 0%, transparent 70%); filter: blur(60px); }
+  .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,184,0,0.08); border: 1px solid rgba(255,184,0,0.2); border-radius: 4px; padding: 6px 14px; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; font-family: var(--font-heading); color: var(--color-primary); margin-bottom: 28px; }
+  .badge-dot { width: 6px; height: 6px; background: var(--color-primary); border-radius: 50%; box-shadow: 0 0 8px var(--color-primary); flex-shrink: 0; }
+  h1 { margin-bottom: 20px; max-width: 800px; }
+  .hero-sub { font-size: clamp(16px, 1.5vw, 19px); color: var(--color-text-secondary); line-height: 1.7; max-width: 620px; margin-bottom: 36px; }
+  .hero-ctas { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 32px; }
+  .hero-trust { display: flex; flex-wrap: wrap; gap: 20px; }
+  .trust-item { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--color-text-muted); }
+  .section-label { font-family: var(--font-heading); font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-primary); margin-bottom: 16px; display: block; }
+  h2 { margin-bottom: 16px; }
+  .section-sub { color: var(--color-text-secondary); max-width: 560px; line-height: 1.7; margin-bottom: 48px; font-size: 17px; }
+  .problem-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+  .problem-card { background: var(--color-bg-elevated); border: 1px solid var(--color-border); border-radius: 12px; padding: 28px; }
+  .problem-icon { margin-bottom: 16px; }
+  .problem-card h3 { font-size: 17px; font-weight: 700; margin: 0 0 12px; color: var(--color-text-primary); }
+  .problem-card p { font-size: 15px; color: var(--color-text-secondary); line-height: 1.65; margin: 0; }
+  .solution-section { background: var(--color-bg-elevated); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
+  .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 0; }
+  .feature-card { background: var(--color-bg-elevated); border: 1px solid var(--color-border); border-radius: 12px; padding: 28px; transition: border-color 0.3s; }
+  .feature-card:hover { border-color: rgba(255,184,0,0.3); }
+  .feature-icon { width: 44px; height: 44px; background: rgba(255,184,0,0.08); border: 1px solid rgba(255,184,0,0.15); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+  .feature-card h3 { font-size: 16px; font-weight: 700; margin: 0 0 10px; }
+  .feature-card p { font-size: 14px; color: var(--color-text-secondary); line-height: 1.6; margin: 0; }
+  .prozess-section { background: var(--color-bg-elevated); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
+  .prozess-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 48px; }
+  .prozess-step { background: var(--color-bg-base); border: 1px solid var(--color-border); border-radius: 12px; padding: 24px; }
+  .step-number { font-family: var(--font-heading); font-size: 40px; font-weight: 800; color: rgba(255,184,0,0.15); line-height: 1; margin-bottom: 12px; }
+  .step-title { font-size: 16px; font-weight: 700; margin: 0 0 8px; }
+  .step-desc { font-size: 14px; color: var(--color-text-secondary); line-height: 1.6; margin: 0; }
+  .faq-list { display: flex; flex-direction: column; gap: 12px; margin-top: 40px; }
+  details { background: var(--color-bg-elevated); border: 1px solid var(--color-border); border-radius: 10px; overflow: hidden; }
+  details[open] { border-color: rgba(255,184,0,0.25); }
+  summary { padding: 20px 24px; font-size: 16px; font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: var(--color-text-primary); }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: '+'; font-size: 20px; color: var(--color-primary); font-weight: 400; flex-shrink: 0; margin-left: 16px; }
+  details[open] summary::after { content: '−'; }
+  .faq-answer { padding: 0 24px 20px; font-size: 15px; color: var(--color-text-secondary); line-height: 1.7; }
+  .faq-answer p { margin: 0; }
+  .cta-strip { border-top: 1px solid var(--color-border); background: var(--color-bg-elevated); }
+  .cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
+  .cta-heading { font-size: clamp(24px, 3vw, 36px); margin: 0 0 8px; }
+  .cta-sub { color: var(--color-text-secondary); margin: 0 0 20px; }
+  .cta-links { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 16px; }
+  .cta-link { font-size: 14px; color: var(--color-primary); text-decoration: none; font-weight: 600; }
+  .cta-link:hover { text-decoration: underline; }
+  @media (max-width: 900px) {
+    .problem-grid, .features-grid { grid-template-columns: 1fr 1fr; }
+    .prozess-steps { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 560px) {
+    .problem-grid, .features-grid, .prozess-steps { grid-template-columns: 1fr; }
+    .cta-inner { flex-direction: column; align-items: flex-start; }
+  }
+</style>
