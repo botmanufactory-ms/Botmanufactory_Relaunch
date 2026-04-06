@@ -1,0 +1,249 @@
+---
+const services = [
+  {
+    id: "website-relaunch",
+    title: "Website & Relaunch",
+    desc: "Ihre Website ist das erste Bild, das Kunden von Ihnen bekommen. Wir bauen Websites, die konvertieren — schnell, modern und auf Ihre Branche zugeschnitten.",
+    href: "/website-relaunch",
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>`,
+    tags: ["Webdesign", "SEO-optimiert", "Conversion"],
+    featured: false,
+  },
+  {
+    id: "ki-chatbot",
+    title: "KI Chatbot",
+    desc: "Ihr Chatbot beantwortet Fragen, qualifiziert Leads und bucht Termine — rund um die Uhr, ohne Wartezeit. Fertig integriert in Ihre Website.",
+    href: "/ki-chatbot",
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+    tags: ["24/7 verfügbar", "DSGVO-konform", "Lead-Qualifizierung"],
+    featured: false,
+  },
+  {
+    id: "voice-agent",
+    title: "KI Telefonassistent",
+    desc: "Kein verpasster Anruf mehr. Der KI Voice Agent nimmt Ihr Telefon ab, beantwortet Standardfragen und leitet wichtige Anrufe weiter.",
+    href: "/ki-telefonassistent",
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.25h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.29 6.29l1.37-1.37a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+    tags: ["Voice AI", "Terminbuchung", "Weiterleitung"],
+    featured: false,
+  },
+  {
+    id: "automatisierung",
+    title: "Prozessautomatisierung",
+    desc: "Angebote, Rechnungen, Rapporte, Follow-ups — KI übernimmt Ihre Routineaufgaben. Ihr Team gewinnt Zeit für das, was wirklich zählt.",
+    href: "/ki-automatisierung",
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>`,
+    tags: ["Zeitersparnis", "Fehlerreduktion", "Skalierbar"],
+    featured: false,
+  },
+  {
+    id: "seo",
+    title: "SEO & Sichtbarkeit",
+    desc: "Was nützt eine perfekte Website, wenn niemand sie findet? Wir bringen Sie auf Seite 1 — mit technischem SEO, Content und lokalem Google-Ranking.",
+    href: "/seo",
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>`,
+    tags: ["Google Ranking", "Local SEO", "Content"],
+    featured: false,
+  },
+  {
+    id: "ki-dashboard",
+    title: "KI Dashboard",
+    desc: "Alle Prozesse, Daten und Automatisierungen in einem Interface. Unser Eigenprodukt — speziell für Geschäftsführer, die den Überblick behalten wollen.",
+    href: "/ki-dashboard",
+    icon: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="14" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="3" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="14" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/></svg>`,
+    tags: ["Eigenprodukt", "Echtzeit-Daten", "Alle Prozesse"],
+    featured: true,
+  },
+];
+---
+
+<section id="leistungen" class="section-padding" aria-labelledby="services-heading">
+  <div class="container">
+    <div class="section-label reveal">Leistungen</div>
+
+    <h2 id="services-heading" class="reveal" data-delay="0.1">
+      Was wir für Sie bauen
+    </h2>
+    <p class="section-sub reveal" data-delay="0.2">
+      Von der ersten Website bis zur vollständigen Unternehmensautomatisierung —
+      wir begleiten Sie Schritt für Schritt.
+    </p>
+
+    <div class="services-grid">
+      {services.map((svc, i) => (
+        <a
+          href={svc.href}
+          class={`service-card card reveal tilt-card ${svc.featured ? 'service-featured' : ''}`}
+          data-delay={String(0.08 * (i + 1))}
+          data-tilt
+          data-tilt-max="6"
+          data-tilt-speed="400"
+          data-tilt-glare
+          data-tilt-max-glare="0.1"
+          aria-label={svc.title}
+        >
+          {svc.featured && (
+            <div class="featured-badge" aria-label="Eigenprodukt">Eigenprodukt</div>
+          )}
+          <div class={`service-icon ${svc.featured ? 'service-icon-featured' : ''}`} set:html={svc.icon} />
+          <h3 class="service-title">{svc.title}</h3>
+          <p class="service-desc">{svc.desc}</p>
+          <div class="service-tags" aria-label="Merkmale">
+            {svc.tags.map(tag => (
+              <span class="service-tag">{tag}</span>
+            ))}
+          </div>
+          <div class="service-arrow" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-label {
+    font-family: var(--font-heading);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: 24px;
+  }
+
+  .section-sub {
+    color: var(--color-text-secondary);
+    max-width: 560px;
+    margin-bottom: 56px;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .service-card {
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    position: relative;
+    text-decoration: none;
+    transform-style: preserve-3d;
+  }
+
+  .service-featured {
+    border-color: var(--color-primary) !important;
+    background: linear-gradient(135deg, #0F1117 0%, #141520 100%) !important;
+    box-shadow: 0 0 40px rgba(255, 184, 0, 0.08), inset 0 0 0 1px rgba(255, 184, 0, 0.15);
+  }
+
+  .featured-badge {
+    position: absolute;
+    top: -12px;
+    left: 28px;
+    background: var(--color-primary);
+    color: #08090E;
+    font-family: var(--font-heading);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 4px;
+  }
+
+  .service-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 184, 0, 0.08);
+    border-radius: 10px;
+    color: var(--color-primary);
+    flex-shrink: 0;
+  }
+
+  .service-icon-featured {
+    background: rgba(255, 184, 0, 0.15);
+    box-shadow: 0 0 20px rgba(255, 184, 0, 0.2);
+  }
+
+  .service-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin: 0;
+  }
+
+  .service-desc {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin: 0;
+    flex: 1;
+  }
+
+  .service-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .service-tag {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 3px;
+    background: var(--color-bg-subtle);
+    color: var(--color-text-muted);
+    font-family: var(--font-mono);
+    letter-spacing: 0.03em;
+  }
+
+  .service-arrow {
+    color: var(--color-primary);
+    opacity: 0;
+    transform: translateX(-8px);
+    transition: opacity 0.2s, transform 0.2s;
+    align-self: flex-end;
+    margin-top: auto;
+  }
+
+  .service-card:hover .service-arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* Shine effect for tilt cards */
+  :global(.js-tilt-glare-inner) {
+    background: linear-gradient(0deg, transparent, rgba(255,184,0,0.05) 100%) !important;
+  }
+
+  @media (max-width: 900px) {
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 560px) {
+    .services-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<script>
+  import VanillaTilt from 'vanilla-tilt';
+
+  const tiltCards = document.querySelectorAll('[data-tilt]') as NodeListOf<HTMLElement>;
+  VanillaTilt.init(tiltCards, {
+    max: 6,
+    speed: 400,
+    glare: true,
+    'max-glare': 0.08,
+    scale: 1.02,
+  });
+</script>

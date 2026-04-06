@@ -1,0 +1,222 @@
+---
+---
+
+<nav id="nav" aria-label="Hauptnavigation">
+  <div class="nav-inner container">
+    <!-- Logo -->
+    <a href="/" class="nav-logo" aria-label="Botmanufactory – Startseite">
+      <span class="logo-mark">B</span>
+      <span class="logo-text">botmanufactory</span>
+    </a>
+
+    <!-- Desktop Links -->
+    <ul class="nav-links" role="list">
+      <li><a href="#leistungen">Leistungen</a></li>
+      <li><a href="#branchen">Branchen</a></li>
+      <li><a href="#ueber-uns">Über uns</a></li>
+      <li><a href="#blog">Blog</a></li>
+    </ul>
+
+    <!-- CTA -->
+    <div class="nav-cta">
+      <a href="#kontakt" class="btn-primary nav-btn">Kostenlose Analyse</a>
+    </div>
+
+    <!-- Mobile burger -->
+    <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <ul role="list">
+      <li><a href="#leistungen">Leistungen</a></li>
+      <li><a href="#branchen">Branchen</a></li>
+      <li><a href="#ueber-uns">Über uns</a></li>
+      <li><a href="#blog">Blog</a></li>
+    </ul>
+    <a href="#kontakt" class="btn-primary" style="width:100%;justify-content:center;margin-top:16px;">
+      Kostenlose Analyse
+    </a>
+  </div>
+</nav>
+
+<style>
+  #nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(8, 9, 14, 0.0);
+    backdrop-filter: blur(0px);
+    border-bottom: 1px solid transparent;
+    transition: background 0.4s ease, backdrop-filter 0.4s ease, border-color 0.4s ease;
+  }
+
+  #nav.scrolled {
+    background: rgba(8, 9, 14, 0.88);
+    backdrop-filter: blur(20px);
+    border-bottom-color: var(--color-border);
+  }
+
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+    gap: 32px;
+  }
+
+  /* Logo */
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+
+  .logo-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: var(--color-primary);
+    color: #08090E;
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 16px var(--color-primary-glow);
+  }
+
+  .logo-text {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--color-text-primary);
+    letter-spacing: -0.01em;
+  }
+
+  /* Nav links */
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 32px;
+  }
+
+  .nav-links a {
+    color: var(--color-text-secondary);
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.2s;
+    letter-spacing: 0.01em;
+  }
+
+  .nav-links a:hover {
+    color: var(--color-text-primary);
+  }
+
+  .nav-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* Burger */
+  .burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  .burger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--color-text-primary);
+    border-radius: 2px;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  .burger[aria-expanded="true"] span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .burger[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+  }
+  .burger[aria-expanded="true"] span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  /* Mobile menu */
+  .mobile-menu {
+    background: var(--color-bg-elevated);
+    border-top: 1px solid var(--color-border);
+    padding: 24px;
+  }
+
+  .mobile-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .mobile-menu a {
+    display: block;
+    padding: 14px 0;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--font-heading);
+    color: var(--color-text-primary);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  @media (max-width: 768px) {
+    .nav-links, .nav-cta { display: none; }
+    .burger { display: flex; }
+  }
+</style>
+
+<script>
+  const nav = document.getElementById('nav')!;
+  const burger = document.getElementById('burger')!;
+  const mobileMenu = document.getElementById('mobile-menu')!;
+
+  // Scroll state
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  }, { passive: true });
+
+  // Burger toggle
+  burger.addEventListener('click', () => {
+    const expanded = burger.getAttribute('aria-expanded') === 'true';
+    burger.setAttribute('aria-expanded', String(!expanded));
+    mobileMenu.hidden = expanded;
+  });
+
+  // Close on link click
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      burger.setAttribute('aria-expanded', 'false');
+      mobileMenu.hidden = true;
+    });
+  });
+</script>

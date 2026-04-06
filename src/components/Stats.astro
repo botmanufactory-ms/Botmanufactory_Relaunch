@@ -1,0 +1,149 @@
+---
+const stats = [
+  { value: 40, suffix: "+", label: "Stunden/Woche eingespart", sublabel: "pro automatisiertem Prozess" },
+  { value: 25, suffix: "+", label: "Websites delivered", sublabel: "in verschiedenen Branchen" },
+  { value: 15, suffix: "+", label: "automatisierte Prozesse", sublabel: "in Betrieb" },
+  { value: 100, suffix: "%", label: "persönlicher Kontakt", sublabel: "kein anonymer Support" },
+];
+---
+
+<section class="stats-section" aria-labelledby="stats-heading">
+  <div class="container">
+    <h2 id="stats-heading" class="visually-hidden">Zahlen und Fakten</h2>
+    <div class="stats-grid">
+      {stats.map((stat, i) => (
+        <div class="stat-item reveal" data-delay={String(0.1 * i)}>
+          <div class="stat-number">
+            <span
+              class="count mono"
+              data-target={stat.value}
+              aria-label={`${stat.value}${stat.suffix}`}
+            >0</span>
+            <span class="stat-suffix text-amber">{stat.suffix}</span>
+          </div>
+          <div class="stat-label">{stat.label}</div>
+          <div class="stat-sublabel">{stat.sublabel}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .stats-section {
+    padding: 80px 0;
+    background: var(--color-bg-elevated);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    padding: 32px 16px;
+    border-right: 1px solid var(--color-border);
+  }
+
+  .stat-item:last-child {
+    border-right: none;
+  }
+
+  .stat-number {
+    display: flex;
+    align-items: baseline;
+    gap: 2px;
+  }
+
+  .count {
+    font-size: clamp(48px, 5vw, 72px);
+    font-weight: 700;
+    line-height: 1;
+    color: var(--color-text-primary);
+  }
+
+  .stat-suffix {
+    font-family: var(--font-heading);
+    font-size: clamp(32px, 3vw, 48px);
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--color-text-primary);
+  }
+
+  .stat-sublabel {
+    font-size: 13px;
+    color: var(--color-text-muted);
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
+
+  @media (max-width: 768px) {
+    .stats-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .stat-item {
+      border-right: none;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .stat-item:nth-child(2n) { border-right: none; }
+  }
+
+  @media (max-width: 400px) {
+    .stats-grid { grid-template-columns: 1fr; }
+    .stat-item { border-right: none; }
+  }
+</style>
+
+<script>
+  function animateCounter(el: HTMLElement, target: number, duration: number = 1500) {
+    const start = performance.now();
+    const update = (now: number) => {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      // ease out cubic
+      const eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.floor(eased * target).toString();
+      if (progress < 1) requestAnimationFrame(update);
+      else el.textContent = target.toString();
+    };
+    requestAnimationFrame(update);
+  }
+
+  const counters = document.querySelectorAll('.count') as NodeListOf<HTMLElement>;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target as HTMLElement;
+        const target = parseInt(el.dataset.target || '0', 10);
+        animateCounter(el, target);
+        observer.unobserve(el);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  counters.forEach(c => observer.observe(c));
+</script>

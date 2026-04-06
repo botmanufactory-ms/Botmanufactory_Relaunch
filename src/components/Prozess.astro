@@ -1,0 +1,290 @@
+---
+const steps = [
+  {
+    number: "01",
+    title: "Analyse & Zieldefinition",
+    desc: "Wir verstehen Ihr Unternehmen, Ihre Zielgruppe und Ihre Engpässe — bevor wir eine einzige Zeile Code schreiben. Ein 30-Minuten-Gespräch reicht.",
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>`,
+  },
+  {
+    number: "02",
+    title: "Website als Einstieg",
+    desc: "Ihr erster Schritt: eine Website, die Ihre Leistungen professionell präsentiert und aktiv Anfragen generiert. Fertig in Wochen, nicht Monaten.",
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>`,
+  },
+  {
+    number: "03",
+    title: "KI-Implementierung",
+    desc: "Auf Ihrer Website bauen wir auf: Chatbot, Voice Agent, automatische Angebote — Schritt für Schritt, ohne Ihren Betrieb zu stören.",
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>`,
+  },
+  {
+    number: "04",
+    title: "Schulung & Übergabe",
+    desc: "Wir erklären Ihrem Team, wie alles funktioniert. Kein Fachwissen nötig. Alle Systeme sind einfach zu bedienen — für Sie und Ihre Mitarbeitenden.",
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>`,
+  },
+  {
+    number: "05",
+    title: "Laufende Optimierung",
+    desc: "Wir bleiben Ihr Partner. Daten, Ergebnisse und neue Möglichkeiten — wir wachsen gemeinsam. Kein einmaliges Projekt, sondern eine echte Partnerschaft.",
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+  },
+];
+---
+
+<section id="prozess" class="section-padding" aria-labelledby="prozess-heading">
+  <div class="container">
+    <div class="section-label reveal">So arbeiten wir</div>
+    <h2 id="prozess-heading" class="reveal" data-delay="0.1">
+      Von der ersten Website<br />
+      <span class="text-amber">zur vollen Automatisierung.</span>
+    </h2>
+    <p class="section-sub reveal" data-delay="0.2">
+      Kein Big-Bang-Ansatz. Kein überwältigender Aufwand auf einmal.
+      Wir beginnen einfach und bauen Schritt für Schritt auf.
+    </p>
+
+    <!-- Steps -->
+    <div class="steps-wrap">
+      <!-- Vertical connector line -->
+      <div class="connector-line" aria-hidden="true">
+        <div class="connector-fill" id="connector-fill"></div>
+      </div>
+
+      <div class="steps-list">
+        {steps.map((step, i) => (
+          <div
+            class="step-item reveal"
+            data-delay={String(0.1 * i)}
+            data-step={i}
+            id={`step-${i}`}
+          >
+            <div class="step-left">
+              <div class="step-dot" aria-hidden="true">
+                <div class="step-dot-inner">{step.number}</div>
+              </div>
+            </div>
+            <div class="step-content card">
+              <div class="step-icon" set:html={step.icon} aria-hidden="true" />
+              <div class="step-body">
+                <div class="step-number-label">Schritt {step.number}</div>
+                <h3 class="step-title">{step.title}</h3>
+                <p class="step-desc">{step.desc}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- CTA after process -->
+    <div class="prozess-cta reveal" data-delay="0.6">
+      <p>Bereit für den ersten Schritt?</p>
+      <a href="#kontakt" class="btn-primary">
+        Kostenlose Analyse buchen
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-label {
+    font-family: var(--font-heading);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: 24px;
+  }
+
+  .section-sub {
+    color: var(--color-text-secondary);
+    max-width: 520px;
+    margin-bottom: 64px;
+  }
+
+  /* Steps layout */
+  .steps-wrap {
+    position: relative;
+    display: flex;
+    gap: 0;
+  }
+
+  .connector-line {
+    position: absolute;
+    left: 24px;
+    top: 40px;
+    bottom: 40px;
+    width: 2px;
+    background: var(--color-border);
+    z-index: 0;
+  }
+
+  .connector-fill {
+    width: 100%;
+    background: linear-gradient(to bottom, var(--color-primary), rgba(255,184,0,0.3));
+    height: 0%;
+    transition: height 0.1s linear;
+    border-radius: 2px;
+    box-shadow: 0 0 8px var(--color-primary-glow);
+  }
+
+  .steps-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  .step-item {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+  }
+
+  .step-left {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4px;
+  }
+
+  .step-dot {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--color-bg-elevated);
+    border: 2px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.3s, background 0.3s, box-shadow 0.3s;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .step-item.in-view .step-dot {
+    border-color: var(--color-primary);
+    background: rgba(255, 184, 0, 0.1);
+    box-shadow: 0 0 20px var(--color-primary-glow);
+  }
+
+  .step-dot-inner {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    transition: color 0.3s;
+  }
+
+  .step-item.in-view .step-dot-inner {
+    color: var(--color-primary);
+  }
+
+  .step-content {
+    flex: 1;
+    padding: 28px 32px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .step-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 184, 0, 0.08);
+    border-radius: 10px;
+    color: var(--color-primary);
+    flex-shrink: 0;
+  }
+
+  .step-body {
+    flex: 1;
+  }
+
+  .step-number-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    font-family: var(--font-heading);
+    margin-bottom: 6px;
+  }
+
+  .step-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+
+  .step-desc {
+    font-size: 15px;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* Prozess CTA */
+  .prozess-cta {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 64px;
+    padding-top: 48px;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .prozess-cta p {
+    margin: 0;
+    font-size: 18px;
+    color: var(--color-text-secondary);
+  }
+
+  @media (max-width: 640px) {
+    .connector-line { left: 20px; }
+    .step-content { flex-direction: column; }
+    .prozess-cta { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+
+<script>
+  const stepItems = document.querySelectorAll('.step-item') as NodeListOf<HTMLElement>;
+  const connectorFill = document.getElementById('connector-fill')!;
+
+  const observer = new IntersectionObserver((entries) => {
+    let maxIndex = -1;
+    stepItems.forEach((item, i) => {
+      if (item.classList.contains('in-view')) maxIndex = i;
+    });
+
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        const idx = Array.from(stepItems).indexOf(entry.target as HTMLElement);
+        if (idx > maxIndex) maxIndex = idx;
+      }
+    });
+
+    // Update line fill
+    const pct = stepItems.length > 0
+      ? ((maxIndex + 1) / stepItems.length) * 100
+      : 0;
+    connectorFill.style.height = `${pct}%`;
+  }, { threshold: 0.4 });
+
+  stepItems.forEach(item => observer.observe(item));
+</script>

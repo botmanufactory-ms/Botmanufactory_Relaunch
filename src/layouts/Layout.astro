@@ -1,0 +1,112 @@
+---
+import '../styles/global.css';
+
+export interface Props {
+  title?: string;
+  description?: string;
+  canonical?: string;
+}
+
+const {
+  title = 'botmanufactory | KI-Agentur & Webdesign München — Automatisierung für den Mittelstand',
+  description = 'KI Chatbots, Voice Agents & Website Relaunch für Handwerker, Arztpraxen und Mittelstand in München. DSGVO-konform, persönlich vor Ort. Jetzt kostenlose Analyse sichern.',
+  canonical = 'https://botmanufactory.de',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content="de_DE" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Botmanufactory",
+        "url": "https://botmanufactory.de",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Vaterstetten",
+          "addressRegion": "Bayern",
+          "addressCountry": "DE"
+        },
+        "areaServed": ["München", "Vaterstetten", "Augsburg", "Landshut", "Ingolstadt"],
+        "knowsAbout": ["KI Automatisierung", "Webdesign", "Voice Agents", "KI Chatbots", "SEO"],
+        "founder": {
+          "@type": "Person",
+          "name": "Michael Segl"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <slot />
+
+    <!-- Lenis smooth scroll + GSAP init -->
+    <script>
+      import Lenis from 'lenis';
+      import { gsap } from 'gsap';
+      import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Smooth scroll
+      const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      });
+
+      lenis.on('scroll', ScrollTrigger.update);
+
+      gsap.ticker.add((time: number) => {
+        lenis.raf(time * 1000);
+      });
+
+      gsap.ticker.lagSmoothing(0);
+
+      // Scroll reveal
+      const reveals = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+              const el = entry.target as HTMLElement;
+              const delay = parseFloat(el.dataset.delay || '0');
+              setTimeout(() => el.classList.add('visible'), delay * 1000);
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      reveals.forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>

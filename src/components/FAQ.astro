@@ -1,0 +1,229 @@
+---
+const faqs = [
+  {
+    question: "Wie lange dauert ein Website Relaunch?",
+    answer: "In der Regel 3 bis 6 Wochen — je nach Umfang und Ihrem Feedback-Tempo. Wir liefern schnell, ohne auf Qualität zu verzichten. Schon nach dem ersten Kick-off-Gespräch bekommen Sie einen konkreten Zeitplan.",
+  },
+  {
+    question: "Was kostet ein KI Chatbot oder Voice Agent?",
+    answer: "Das hängt vom Umfang ab. Einfache Chatbots starten ab 500 Euro einmalig. Voice Agents und komplexe Automatisierungen werden individuell kalkuliert. Nach unserem Erstgespräch bekommen Sie ein transparentes Angebot — ohne versteckte Kosten.",
+  },
+  {
+    question: "Brauche ich technisches Vorwissen?",
+    answer: "Nein. Wir erklären alles so, dass Sie es verstehen und selbst bedienen können. Unsere Systeme sind bewusst einfach gehalten — Sie sind Unternehmer, kein IT-Techniker.",
+  },
+  {
+    question: "Ist das DSGVO-konform?",
+    answer: "Ja. Datenschutz ist kein Afterthought, sondern von Anfang an eingebaut. Alle Systeme, die wir einsetzen, sind DSGVO-konform. Keine Daten in US-Clouds ohne Einwilligung. Auf Wunsch helfen wir Ihnen auch bei der rechtlichen Dokumentation.",
+  },
+  {
+    question: "Bleiben Sie auch nach dem Projekt ansprechbar?",
+    answer: "Ja — und das ist uns besonders wichtig. Wir sehen uns nicht als einmaliger Dienstleister, sondern als Ihre dauerhafte Digitalisierungsabteilung. Updates, Fragen, neue Ideen — wir sind da.",
+  },
+  {
+    question: "Muss ich alle Leistungen auf einmal buchen?",
+    answer: "Nein. Die meisten unserer Kunden starten mit der Website und erweitern dann schrittweise. Das ist unser bewusster Ansatz: Einstieg mit dem, was den größten sofortigen Mehrwert bringt — und dann organisch wachsen.",
+  },
+  {
+    question: "Arbeiten Sie auch außerhalb von München?",
+    answer: "Ja, bundesweit und remote. Persönliche Besuche bieten wir in München, dem Landkreis Ebersberg, Landshut, Augsburg und Ingolstadt an. Für alle anderen Regionen arbeiten wir digital — mit dem gleichen Engagement.",
+  },
+];
+---
+
+<section class="section-padding" aria-labelledby="faq-heading">
+  <div class="container">
+    <div class="section-label reveal">Häufige Fragen</div>
+    <h2 id="faq-heading" class="reveal" data-delay="0.1">
+      Was Unternehmer<br />
+      <span class="text-amber">uns meistens fragen.</span>
+    </h2>
+
+    <div class="faq-grid">
+      <div class="faq-list">
+        {faqs.map((faq, i) => (
+          <details
+            class="faq-item reveal"
+            data-delay={String(0.05 * i)}
+          >
+            <summary class="faq-question">
+              <span>{faq.question}</span>
+              <div class="faq-icon" aria-hidden="true">
+                <svg class="icon-plus" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <svg class="icon-minus" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path d="M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </summary>
+            <div class="faq-answer">
+              <p>{faq.answer}</p>
+            </div>
+          </details>
+        ))}
+      </div>
+
+      <aside class="faq-aside reveal" data-delay="0.3">
+        <div class="aside-card card">
+          <div class="aside-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Ihre Frage ist nicht dabei?</h3>
+          <p>Schreiben Sie uns einfach. Kein Formular, kein Funnel — nur eine ehrliche Antwort.</p>
+          <a href="mailto:hallo@botmanufactory.de" class="btn-primary aside-btn">
+            hallo@botmanufactory.de
+          </a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-label {
+    font-family: var(--font-heading);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: 24px;
+    display: block;
+  }
+
+  h2 { margin-bottom: 56px; }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 48px;
+    align-items: start;
+  }
+
+  /* FAQ items */
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .faq-item:first-child {
+    border-top: 1px solid var(--color-border);
+  }
+
+  .faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 22px 0;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--color-text-primary);
+    cursor: pointer;
+    transition: color 0.2s;
+    user-select: none;
+  }
+
+  .faq-question:hover {
+    color: var(--color-primary);
+  }
+
+  .faq-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-border-strong);
+    border-radius: 6px;
+    color: var(--color-text-muted);
+    flex-shrink: 0;
+    transition: border-color 0.2s, color 0.2s;
+  }
+
+  details[open] .faq-icon {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+
+  .icon-minus { display: none; }
+  details[open] .icon-plus  { display: none; }
+  details[open] .icon-minus { display: block; }
+
+  .faq-answer {
+    padding: 0 0 22px;
+    animation: fadeSlideIn 0.3s ease;
+  }
+
+  @keyframes fadeSlideIn {
+    from { opacity: 0; transform: translateY(-8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .faq-answer p {
+    color: var(--color-text-secondary);
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+    max-width: 640px;
+  }
+
+  /* Aside */
+  .aside-card {
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: sticky;
+    top: 96px;
+  }
+
+  .aside-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 184, 0, 0.08);
+    border-radius: 10px;
+  }
+
+  .aside-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .aside-card p {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .aside-btn {
+    font-size: 13px;
+    padding: 12px 20px;
+    word-break: break-all;
+  }
+
+  @media (max-width: 900px) {
+    .faq-grid {
+      grid-template-columns: 1fr;
+    }
+    .faq-aside {
+      order: -1;
+    }
+    .aside-card {
+      position: static;
+    }
+  }
+</style>

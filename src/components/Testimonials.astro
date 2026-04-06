@@ -1,0 +1,99 @@
+---
+---
+
+<section class="section-padding testimonials-section" aria-labelledby="testimonials-heading">
+  <div class="container">
+    <div class="section-label reveal">Kundenstimmen</div>
+    <h2 id="testimonials-heading" class="reveal" data-delay="0.1">
+      Was unsere Kunden sagen.
+    </h2>
+
+    <!-- Placeholder until real reviews are available -->
+    <div class="testimonials-placeholder reveal" data-delay="0.2" role="status" aria-live="polite">
+      <div class="placeholder-inner">
+        <div class="placeholder-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="var(--color-border-strong)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <p class="placeholder-text">
+          Die ersten Kundenstimmen folgen in Kürze.
+        </p>
+        <p class="placeholder-sub">
+          Wir starten gerade durch — und freuen uns über jeden Partner, der diesen Weg mit uns geht.
+        </p>
+        <a href="#kontakt" class="btn-primary placeholder-btn">
+          Werden Sie einer unserer ersten Kunden
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .testimonials-section {
+    background: linear-gradient(180deg, var(--color-bg-base), var(--color-bg-elevated), var(--color-bg-base));
+  }
+
+  .section-label {
+    font-family: var(--font-heading);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: 24px;
+    display: block;
+  }
+
+  h2 { margin-bottom: 48px; }
+
+  .testimonials-placeholder {
+    border: 1px dashed var(--color-border-strong);
+    border-radius: 12px;
+    padding: 64px 32px;
+  }
+
+  .placeholder-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .placeholder-icon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-bg-subtle);
+    border-radius: 12px;
+    margin-bottom: 8px;
+  }
+
+  .placeholder-text {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--font-heading);
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  .placeholder-sub {
+    font-size: 15px;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .placeholder-btn {
+    margin-top: 8px;
+  }
+</style>

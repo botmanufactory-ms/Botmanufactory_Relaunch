@@ -1,0 +1,253 @@
+---
+const leistungen = [
+  { label: "Website & Relaunch", href: "/website-relaunch" },
+  { label: "KI Chatbot", href: "/ki-chatbot" },
+  { label: "KI Telefonassistent", href: "/ki-telefonassistent" },
+  { label: "Voice Agent", href: "/voice-agent" },
+  { label: "Prozessautomatisierung", href: "/ki-automatisierung" },
+  { label: "KI Dashboard", href: "/ki-dashboard" },
+  { label: "SEO & Sichtbarkeit", href: "/seo" },
+];
+
+const branchen = [
+  { label: "Handwerk", href: "/branchen/handwerk" },
+  { label: "Arztpraxis", href: "/branchen/arztpraxis" },
+  { label: "Fitness & Beauty", href: "/branchen/fitness-wellness" },
+  { label: "Pflegedienst", href: "/branchen/pflegedienst" },
+  { label: "Reinigung", href: "/branchen/reinigung" },
+];
+
+const standorte = [
+  "München",
+  "Vaterstetten",
+  "Landshut",
+  "Augsburg",
+  "Ingolstadt",
+];
+---
+
+<footer class="footer" aria-label="Footer">
+  <div class="container">
+    <!-- Top row -->
+    <div class="footer-top">
+      <!-- Brand -->
+      <div class="footer-brand">
+        <a href="/" class="footer-logo" aria-label="Botmanufactory Startseite">
+          <span class="logo-mark">B</span>
+          <span class="logo-text">botmanufactory</span>
+        </a>
+        <p class="footer-tagline">
+          Wir bauen zuerst Ihre Website.<br />
+          Dann automatisieren wir Ihr Unternehmen.
+        </p>
+        <div class="footer-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          Made in Bayern · Vaterstetten
+        </div>
+      </div>
+
+      <!-- Leistungen -->
+      <nav aria-label="Leistungen">
+        <div class="footer-col-title">Leistungen</div>
+        <ul role="list">
+          {leistungen.map(l => (
+            <li><a href={l.href} class="footer-link">{l.label}</a></li>
+          ))}
+        </ul>
+      </nav>
+
+      <!-- Branchen -->
+      <nav aria-label="Branchen">
+        <div class="footer-col-title">Branchen</div>
+        <ul role="list">
+          {branchen.map(b => (
+            <li><a href={b.href} class="footer-link">{b.label}</a></li>
+          ))}
+        </ul>
+      </nav>
+
+      <!-- Kontakt & Standorte -->
+      <div class="footer-contact">
+        <div class="footer-col-title">Kontakt</div>
+        <div class="contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <a href="mailto:hallo@botmanufactory.de" class="footer-link">
+            hallo@botmanufactory.de
+          </a>
+        </div>
+
+        <div class="footer-col-title" style="margin-top:24px;">Standorte</div>
+        <ul class="standorte-list" role="list">
+          {standorte.map(s => (
+            <li class="footer-link">{s}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
+
+    <div class="divider" style="margin: 48px 0 32px;"></div>
+
+    <!-- Bottom row -->
+    <div class="footer-bottom">
+      <p class="footer-copy">
+        © {new Date().getFullYear()} Botmanufactory · Michael Segl · Vaterstetten
+      </p>
+      <nav class="footer-legal" aria-label="Rechtliches">
+        <a href="/impressum" class="footer-link">Impressum</a>
+        <a href="/datenschutz" class="footer-link">Datenschutz</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: var(--color-bg-elevated);
+    border-top: 1px solid var(--color-border);
+    padding: 80px 0 40px;
+  }
+
+  .footer-top {
+    display: grid;
+    grid-template-columns: 280px 1fr 1fr 200px;
+    gap: 48px;
+  }
+
+  /* Brand */
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    text-decoration: none;
+  }
+
+  .logo-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--color-primary);
+    color: #08090E;
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 18px;
+    border-radius: 7px;
+    box-shadow: 0 0 12px var(--color-primary-glow);
+    flex-shrink: 0;
+  }
+
+  .logo-text {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--color-text-primary);
+  }
+
+  .footer-tagline {
+    font-size: 14px;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .footer-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--color-text-muted);
+    font-weight: 500;
+  }
+
+  /* Nav cols */
+  .footer-col-title {
+    font-family: var(--font-heading);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: 16px;
+  }
+
+  ul[role="list"] {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-link {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer-link:hover {
+    color: var(--color-text-primary);
+  }
+
+  /* Contact */
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-text-muted);
+    margin-bottom: 4px;
+  }
+
+  .standorte-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  /* Bottom */
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .footer-copy {
+    font-size: 13px;
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+
+  .footer-legal {
+    display: flex;
+    gap: 24px;
+  }
+
+  @media (max-width: 1024px) {
+    .footer-top {
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .footer-top {
+      grid-template-columns: 1fr;
+      gap: 36px;
+    }
+    .footer-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>
