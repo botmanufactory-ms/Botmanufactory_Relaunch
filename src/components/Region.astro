@@ -15,17 +15,18 @@ const regions = [
     <div class="region-grid">
       <!-- Left: Text -->
       <div class="region-text">
-        <div class="section-label reveal">Vor Ort in Bayern</div>
+        <div class="section-label reveal">Deutschlandweit</div>
         <h2 id="region-heading" class="reveal" data-delay="0.1">
-          Kein Ferndienstleister.<br />
-          <span class="text-amber">Persönlich bei Ihnen.</span>
+          Bundesweit remote.<br />
+          <span class="text-amber">In Bayern auch persönlich.</span>
         </h2>
         <p class="region-sub reveal" data-delay="0.2">
-          Wir kommen zu Ihnen. Ob Erstgespräch, Workshop oder Projektabnahme —
-          persönlicher Kontakt ist uns wichtig. Im Landkreis München und darüber hinaus.
+          Projekte entstehen digital — das funktioniert genauso gut von Hamburg bis München.
+          Wer in der Nähe ist, bekommt auf Wunsch auch einen persönlichen Besuch vor Ort.
         </p>
 
-        <div class="regions-list reveal" data-delay="0.3" role="list" aria-label="Einzugsgebiet">
+        <div class="regions-list reveal" data-delay="0.3" role="list" aria-label="Persönliche Besuche möglich in">
+          <div class="regions-list-label">Persönliche Besuche möglich in</div>
           {regions.map(r => (
             <div class="region-item" role="listitem">
               <div class={`region-dot ${r.primary ? 'region-dot-primary' : ''}`} aria-hidden="true"></div>
@@ -42,7 +43,7 @@ const regions = [
             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="var(--color-primary)" stroke-width="1.5"/>
             <circle cx="12" cy="10" r="3" stroke="var(--color-primary)" stroke-width="1.5"/>
           </svg>
-          Bundesweit auch remote verfügbar — mit dem gleichen Engagement.
+          Egal wo in Deutschland — die Qualität der Arbeit bleibt dieselbe.
         </div>
       </div>
 
@@ -167,6 +168,16 @@ const regions = [
     flex-direction: column;
     gap: 12px;
     margin-bottom: 32px;
+  }
+
+  .regions-list-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    font-family: var(--font-heading);
+    margin-bottom: 4px;
   }
 
   .region-item {
